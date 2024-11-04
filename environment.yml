@@ -1,0 +1,34 @@
+name: real_estate_ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # 기본 Python
+  - python=3.8
+  
+  # 핵심 데이터 과학 패키지
+  - numpy=1.21.5
+  - pandas=1.4.4
+  - scikit-learn=1.0.2
+  
+  # 시각화
+  - matplotlib=3.5.2
+  - seaborn=0.11.2
+  
+  # 모델링 (버전 명시 제거하고 최신 안정 버전 사용)
+  - xgboost
+  - lightgbm
+  
+  # 개발 환경
+  - jupyter=1.0.0
+  - ipykernel=6.9.1
+  
+  # 유틸리티
+  - pyyaml=6.0
+  - joblib=1.1.0
+  
+  # pip 패키지
+  - pip=21.2.4
+  - pip:
+    - wandb==0.13.5
+    - python-dotenv==0.21.0
